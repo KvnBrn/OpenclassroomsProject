@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-h1 {
-    color: red;
-}
-=======
 /*-----Police de la page-----*/
 
 @font-face {
@@ -190,4 +185,3 @@ article
 	-webkit-transform: scale(1.5);
 	transform: scale(1.5);
 }
->>>>>>> 5cbc4e4 (Ajout de l'index et du css associé)
