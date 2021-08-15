@@ -1,3 +1,193 @@
+<<<<<<< HEAD
 h1 {
     color: red;
 }
+=======
+/*-----Police de la page-----*/
+
+@font-face {
+	font-family: 'opFont';
+	src: url('fonts/opFont.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*-----Eléments principaux de la page-----*/
+
+body
+{
+	background: url(images/fushia.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-attachment: fixed;
+	font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+#blocPage
+{
+	width: 80%;
+	margin: auto;
+	background-color: rgba(76, 76, 76, 0.8);
+}
+
+/*-----Header-----*/
+
+Header
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+/*-----Menu de navigation-----*/
+
+nav
+{
+	background-color: rgba(60, 60, 60, 0.5);
+	border: 3px dodgerblue double;
+	border-radius: 8px;
+	box-shadow: 6px 6px 6px black;
+	width: 20%;
+	padding: 5px 15px;
+}
+
+nav a
+{
+	font-family: 'opFont';
+	font-weight: bold;
+	font-size: 2.2em;
+	text-decoration: none;
+	color: dodgerblue;
+}
+
+nav a:hover
+{
+	text-decoration: underline;
+	color: royalblue;
+}
+
+nav ul
+{
+	list-style-image: url('images/menu.png');
+	display: inline-block;
+	margin: auto;
+}
+
+nav ul li 
+{
+	list-style-type: none;
+}
+
+/*-----Bannière-----*/
+
+#banniereImage
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 210px;
+}
+
+.shanks
+{
+	border-radius: 10px;
+	box-shadow: 6px 6px 6px black;
+}
+
+.luffyShanks
+{
+	border-radius: 10px;
+	box-shadow: 6px 6px 6px black;
+}
+
+.luffy
+{
+	border-radius: 10px;
+	box-shadow: 6px 6px 6px black;
+}
+
+/*-----Titres-----*/
+
+h1
+{
+	font-family: 'opFont';
+	font-weight: bold;
+	font-size: 5em;
+	text-shadow: 6px 6px 6px black;
+	text-align: center;
+	background-color: rgba(60, 60, 60, 0.5);
+	border: 3px darkslategrey dotted;
+	border-radius: 50% 20% / 10% 40%;
+}
+
+/*-----Corps-----*/
+
+section
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	margin-bottom: 25px;
+}
+
+article
+{
+	text-align: justify;
+	width: 62%;
+}
+
+.equipageMugiwara
+{
+	display: block;
+	margin: auto;
+	border-radius: 6px;
+	box-shadow: 6px 6px 6px black;
+	transition: transform .1s;
+}
+
+/*-----Zoom de l'image-----*/
+
+.equipageMugiwara:hover
+{
+	-ms-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+.luffyEnfant
+{
+	float: left;
+	border-radius: 6px;
+	box-shadow: 6px 6px 6px black;
+	margin-right: 15px;
+	transition: transform .1s;
+}
+
+/*-----Zoom de l'image-----*/
+
+.luffyEnfant:hover
+{
+	-ms-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+.eiichiroOda
+{
+	float: right;
+	border-radius: 6px;
+	box-shadow: 6px 6px 6px black;
+	margin-left: 15px;
+	transition: transform .1s;
+}
+
+/*-----Zoom de l'image-----*/
+
+.eiichiroOda:hover
+{
+	-ms-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+>>>>>>> 5cbc4e4 (Ajout de l'index et du css associé)
