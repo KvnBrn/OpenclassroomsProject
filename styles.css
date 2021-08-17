@@ -15,6 +15,7 @@ body
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-attachment: fixed;
+	background-position-x: center;
 	font-family: 'Trebuchet MS', Arial, sans-serif;
 }
 
@@ -111,8 +112,8 @@ h1
 	text-shadow: 6px 6px 6px black;
 	text-align: center;
 	background-color: rgba(60, 60, 60, 0.5);
-	border: 3px darkslategrey dotted;
-	border-radius: 50% 20% / 10% 40%;
+	border: 3px darkslategrey solid;
+	border-radius: 40% 40% / 40% 40%;
 }
 
 /*-----Corps-----*/
@@ -126,7 +127,7 @@ section
 	margin-bottom: 25px;
 }
 
-.page1
+.articlePage1
 {
 	text-align: justify;
 	width: 65%;
@@ -261,9 +262,11 @@ footer
 h2
 {
 	font-family: 'opFont';
-	font-size: 4.5em;
+	font-size: 4.8em;
 	font-weight: bold;
 	text-shadow: 6px 6px 6px black;
+	width: 100%;
+	text-align: center;
 }
 
 h3
@@ -272,14 +275,16 @@ h3
 	font-size: 3.5em;
 	font-weight: bold;
 	text-shadow: 6px 6px 6px black;
+	width: 100%;
+	text-align: center;
 }
 
 /*-----Ancres-----*/
 
 section ul
 {
-	display: inline-block;
-	margin: 0 40px 50px 0;
+	width: 100%;
+	text-align: center;
 }
 
 section a
@@ -289,7 +294,8 @@ section a
 	text-decoration: none;
 	color: dodgerblue;
 	border-left: 3px black solid;
-	padding: 0 10px;
+	display: inline-block;
+	padding: 0 12px;
 }
 
 .navire
@@ -311,8 +317,6 @@ table
 	border: 2px black solid;
 	border-radius: 8px;
 	box-shadow: 6px 6px 6px black;
-	margin-left: 25px;
-	margin-right: 25px;
 }
 
 table th 
@@ -321,14 +325,14 @@ table th
 	vertical-align: text-top;
 	font-weight: bold;
 	font-size: 1.2em;
-	padding-right: 10px;
+	padding: 0 8px;
 }
 
 table td
 {
 	vertical-align: text-top;
 	font-size: 1em;
-	padding-left: 5px;
+	padding: 0 10px 0 4px;
 }
 
 .berry
@@ -339,13 +343,34 @@ table td
 #luffy, #zoro, #usopp, #sanji, #nami, #chopper, #robin, #franky, #brook, #jinbe, #navires
 {
 	display: flex;
-	justify-content: space-between;
-	text-align: justify;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-around;
 }
 
 #navires
 {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	text-align: justify;
+	width: 65%;
+}
+
+.merry
+{
+	float: left;
+	margin: 0 8px 0 0;
+}
+
+.sunny
+{
+	float: right;
+	margin: 0 0 0 8px;
+}
+
+footer a
+{
+	font-weight: bold;
+	font-size: 1.6em;
+	text-decoration: none;
+	color: dodgerblue;
 }
