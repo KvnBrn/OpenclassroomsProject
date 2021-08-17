@@ -11,7 +11,7 @@
 
 body
 {
-	background: url(images/fushia.png);
+	background: url(images/fuchsia.png);
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-attachment: fixed;
@@ -126,24 +126,29 @@ section
 	margin-bottom: 25px;
 }
 
-article
+.page1
 {
 	text-align: justify;
-	width: 62%;
+	width: 65%;
 }
 
-.equipageMugiwara
+#bienvenue
 {
-	display: block;
-	margin: auto;
+	text-align: center;
+}
+
+.roger
+{
+	float: left;
 	border-radius: 6px;
 	box-shadow: 6px 6px 6px black;
+	margin-right: 15px;
 	transition: transform .1s;
 }
 
 /*-----Zoom de l'image-----*/
 
-.equipageMugiwara:hover
+.roger:hover
 {
 	-ms-transform: scale(1.5);
 	-webkit-transform: scale(1.5);
@@ -152,10 +157,10 @@ article
 
 .luffyEnfant
 {
-	float: left;
+	float: right;
 	border-radius: 6px;
 	box-shadow: 6px 6px 6px black;
-	margin-right: 15px;
+	margin-left: 15px;
 	transition: transform .1s;
 }
 
@@ -168,7 +173,25 @@ article
 	transform: scale(1.5);
 }
 
-.eiichiroOda
+.luffyShanks2
+{
+	float: left;
+	border-radius: 6px;
+	box-shadow: 6px 6px 6px black;
+	margin-right: 15px;
+	transition: transform .1s;
+}
+
+/*-----Zoom de l'image-----*/
+
+.luffyShanks2:hover
+{
+	-ms-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+.departLuffy
 {
 	float: right;
 	border-radius: 6px;
@@ -179,9 +202,150 @@ article
 
 /*-----Zoom de l'image-----*/
 
+.departLuffy:hover
+{
+	-ms-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+.eiichiroOda
+{
+	display: block;
+	margin: auto;
+	border-radius: 6px;
+	box-shadow: 6px 6px 6px black;
+	transition: transform .1s;
+}
+
+/*-----Zoom de l'image-----*/
+
 .eiichiroOda:hover
 {
 	-ms-transform: scale(1.5);
 	-webkit-transform: scale(1.5);
 	transform: scale(1.5);
+}
+
+/*-----Footer-----*/
+
+footer
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#slogan
+{
+	font-size: 1.4em;
+	font-weight: bold;
+	height: 30px;
+}
+
+#traduction
+{
+	font-size: 1.2em;
+	font-style: italic;
+}
+
+/*----------Page 2 : Equipage de Luffy----------*/
+/*-----Titres-----*/
+
+.titrePage2
+{
+	width: 65%;
+	text-align: center;
+}
+
+h2
+{
+	font-family: 'opFont';
+	font-size: 4.5em;
+	font-weight: bold;
+	text-shadow: 6px 6px 6px black;
+}
+
+h3
+{
+	font-family: 'opFont';
+	font-size: 3.5em;
+	font-weight: bold;
+	text-shadow: 6px 6px 6px black;
+}
+
+/*-----Ancres-----*/
+
+section ul
+{
+	display: inline-block;
+	margin: 0 40px 50px 0;
+}
+
+section a
+{
+	font-weight: bold;
+	font-size: 1.6em;
+	text-decoration: none;
+	color: dodgerblue;
+	border-left: 3px black solid;
+	padding: 0 10px;
+}
+
+.navire
+{
+	border-right: 3px black solid;
+}
+
+section a:hover
+{
+	text-decoration: underline;
+	color: royalblue;
+}
+
+/*-----Corps-----*/
+
+table
+{
+	background-color: rgba(60, 60, 60, 0.6);
+	border: 2px black solid;
+	border-radius: 8px;
+	box-shadow: 6px 6px 6px black;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+table th 
+{
+	text-align: center;
+	vertical-align: text-top;
+	font-weight: bold;
+	font-size: 1.2em;
+	padding-right: 10px;
+}
+
+table td
+{
+	vertical-align: text-top;
+	font-size: 1em;
+	padding-left: 5px;
+}
+
+.berry
+{
+	vertical-align: middle;
+}
+
+#luffy, #zoro, #usopp, #sanji, #nami, #chopper, #robin, #franky, #brook, #jinbe, #navires
+{
+	display: flex;
+	justify-content: space-between;
+	text-align: justify;
+}
+
+#navires
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
