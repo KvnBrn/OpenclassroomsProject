@@ -9,6 +9,11 @@
 
 /*-----Eléments principaux de la page-----*/
 
+*
+{
+	box-sizing: border-box;
+}
+
 body
 {
 	background: url(images/fuchsia.png);
@@ -43,7 +48,6 @@ nav
 	border: 3px dodgerblue double;
 	border-radius: 8px;
 	box-shadow: 6px 6px 6px black;
-	width: 20%;
 	padding: 5px 15px;
 }
 
@@ -113,7 +117,7 @@ h1
 	text-align: center;
 	background-color: rgba(60, 60, 60, 0.5);
 	border: 3px darkslategrey solid;
-	border-radius: 40% 40% / 40% 40%;
+	border-radius: 50% 50% / 50% 50%;
 }
 
 /*-----Corps-----*/
@@ -125,12 +129,13 @@ section
 	justify-content: space-around;
 	align-items: center;
 	margin-bottom: 25px;
+	line-height: 1.5;
 }
 
 .articlePage1
 {
 	text-align: justify;
-	width: 65%;
+	width: 60%;
 }
 
 #bienvenue
@@ -323,7 +328,6 @@ table
 	border-radius: 8px;
 	box-shadow: 6px 6px 6px black;
 	margin: 0 20px;
-	padding: 5px;
 }
 
 table th 
@@ -332,7 +336,7 @@ table th
 	vertical-align: text-top;
 	font-weight: bold;
 	font-size: 1.2em;
-	padding: 0 8px;
+	padding: 5px 5px 0 0;
 }
 
 table td
