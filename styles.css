@@ -265,8 +265,6 @@ h2
 	font-size: 4.8em;
 	font-weight: bold;
 	text-shadow: 6px 6px 6px black;
-	width: 100%;
-	text-align: center;
 }
 
 h3
@@ -275,7 +273,6 @@ h3
 	font-size: 3.5em;
 	font-weight: bold;
 	text-shadow: 6px 6px 6px black;
-	width: 100%;
 	text-align: center;
 }
 
@@ -309,6 +306,14 @@ section a:hover
 	color: royalblue;
 }
 
+footer a
+{
+	font-weight: bold;
+	font-size: 1.6em;
+	text-decoration: none;
+	color: dodgerblue;
+}
+
 /*-----Corps-----*/
 
 table
@@ -317,6 +322,8 @@ table
 	border: 2px black solid;
 	border-radius: 8px;
 	box-shadow: 6px 6px 6px black;
+	margin: 0 20px;
+	padding: 5px;
 }
 
 table th 
@@ -330,6 +337,7 @@ table th
 
 table td
 {
+	text-align: justify;
 	vertical-align: text-top;
 	font-size: 1em;
 	padding: 0 10px 0 4px;
@@ -340,37 +348,30 @@ table td
 	vertical-align: middle;
 }
 
-#luffy, #zoro, #usopp, #sanji, #nami, #chopper, #robin, #franky, #brook, #jinbe, #navires
+.nom
 {
 	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
 	align-items: center;
-	align-content: space-around;
+	justify-content: center;
+	align-content: center;
+}
+
+.presentation
+{
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	text-align: justify;
 }
 
 #navires
 {
-	text-align: justify;
-	width: 65%;
+	width: 75%;
 }
 
-.merry
+.merry .sunny
 {
-	float: left;
-	margin: 0 8px 0 0;
-}
-
-.sunny
-{
-	float: right;
-	margin: 0 0 0 8px;
-}
-
-footer a
-{
-	font-weight: bold;
-	font-size: 1.6em;
-	text-decoration: none;
-	color: dodgerblue;
+	margin: 5px;
 }
