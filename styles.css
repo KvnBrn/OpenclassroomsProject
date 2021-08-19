@@ -16,12 +16,17 @@
 
 body
 {
-	background: url(images/fuchsia.png);
 	background-repeat: no-repeat;
-	background-size: contain;
 	background-attachment: fixed;
 	background-position-x: center;
 	font-family: 'Trebuchet MS', Arial, sans-serif;
+	margin: 0;
+}
+
+.bgPage1
+{
+	background-image: url(images/fuchsia.png);
+	background-size: cover;
 }
 
 #blocPage
@@ -33,7 +38,7 @@ body
 
 /*-----Header-----*/
 
-Header
+header
 {
 	display: flex;
 	justify-content: space-around;
@@ -42,7 +47,7 @@ Header
 
 /*-----Menu de navigation-----*/
 
-nav
+header nav
 {
 	background-color: rgba(60, 60, 60, 0.5);
 	border: 3px dodgerblue double;
@@ -51,7 +56,7 @@ nav
 	padding: 5px 15px;
 }
 
-nav a
+header nav a
 {
 	font-family: 'opFont';
 	font-weight: bold;
@@ -60,27 +65,27 @@ nav a
 	color: dodgerblue;
 }
 
-nav a:hover
+header nav a:hover
 {
 	text-decoration: underline;
 	color: royalblue;
 }
 
-nav ul
+header nav ul
 {
 	list-style-image: url('images/menu.png');
 	display: inline-block;
 	margin: auto;
 }
 
-nav ul li 
+header nav ul li 
 {
 	list-style-type: none;
 }
 
 /*-----Bannière-----*/
 
-#banniereImage
+#banniereIndex
 {
 	display: flex;
 	justify-content: space-around;
@@ -88,19 +93,7 @@ nav ul li
 	height: 210px;
 }
 
-.shanks
-{
-	border-radius: 10px;
-	box-shadow: 6px 6px 6px black;
-}
-
-.luffyShanks
-{
-	border-radius: 10px;
-	box-shadow: 6px 6px 6px black;
-}
-
-.luffy
+.shanks, .luffyShanks, .luffy
 {
 	border-radius: 10px;
 	box-shadow: 6px 6px 6px black;
@@ -238,30 +231,87 @@ section
 footer
 {
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: space-around;
 	align-items: center;
+	padding-bottom: 15px;
 }
 
-#slogan
+footer nav
+{
+	background-color: rgba(60, 60, 60, 0.5);
+	border: 3px dodgerblue double;
+	border-radius: 8px;
+	box-shadow: 6px 6px 6px black;
+	padding: 5px 15px;
+	list-style-image: url('images/menu.png');
+	display: flex;
+}
+
+footer nav a
+{
+	font-family: 'opFont';
+	font-weight: bold;
+	font-size: 2.2em;
+	text-decoration: none;
+	color: dodgerblue;
+	margin-left: -8px;
+	margin-right: 60px;
+}
+
+footer nav a:hover
+{
+	text-decoration: underline;
+	color: royalblue;
+}
+
+footer nav ul li 
+{
+	list-style-type: none;
+	text-align: center;
+	justify-content: space-around;
+}
+
+.botbar
+{
+	order: 3;
+	margin: 15px;
+}
+
+.slogan
 {
 	font-size: 1.4em;
 	font-weight: bold;
-	height: 30px;
+	order: 1;
+	text-align: right;
+	width: 100%;
+	margin-bottom: -15px;
 }
 
-#traduction
+.traduction
 {
 	font-size: 1.2em;
 	font-style: italic;
+	order: 2;
+	text-align: right;
+	width: 100%;
+	margin-top: -15px;
 }
 
 /*----------Page 2 : Equipage de Luffy----------*/
+/*-----Body-----*/
+
+.bgPage2
+{
+	background-image: url(images/itmMugiwara.jpg);
+	background-size: cover;
+}
+
 /*-----Titres-----*/
 
-.titrePage2
+.titrePage
 {
 	width: 65%;
-	text-align: center;
 }
 
 h2
@@ -378,4 +428,65 @@ table td
 .merry .sunny
 {
 	margin: 5px;
+}
+
+/*----------Page 3 : Les Factions dans One Piece----------*/
+/*-----Eléments principaux de la page-----*/
+
+.bgPage3
+{
+	background-image: url(images/grandLine.png);
+	background-size: cover;
+}
+
+/*-----Bannière-----*/
+
+#banniereFaction
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 210px;
+}
+
+.pirates, .gouvernement, .revolutionnaire
+{
+	border-radius: 10px;
+	box-shadow: 6px 6px 6px black;
+}
+
+/*----------Page 4 : Les Fruits du Démon----------*/
+/*-----Eléments principaux de la page-----*/
+
+.bgPage4
+{
+	background-image: url(images/fdd.jpg);
+	background-size: cover;
+}
+
+/*----------Page 5 : One Piece au Japon----------*/
+/*-----Eléments principaux de la page-----*/
+
+.bgPage5
+{
+	background-image: url(images/sunnySea.jpg);
+	background-size: cover;
+}
+
+/*----------Page 6 : Quiz----------*/
+/*-----Eléments principaux de la page-----*/
+
+.bgPage6
+{
+	background-image: url(images/opQuiz.jpg);
+	background-size: cover;
+}
+
+/*-----Corps-----*/
+
+.pQuiz
+{
+	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
 }
