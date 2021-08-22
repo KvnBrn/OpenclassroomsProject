@@ -125,18 +125,30 @@ section
 	line-height: 1.5;
 }
 
-.articlePage1
+.articleJustify
 {
 	text-align: justify;
 	width: 60%;
 }
 
-#bienvenue
+.aPropos
 {
 	text-align: center;
 }
 
-.roger
+section p a
+{
+	font-weight: bold;
+	text-decoration: none;
+	color: dodgerblue;
+}
+
+.quote
+{
+	font-style: italic;
+}
+
+.roger, .luffyShanks2
 {
 	float: left;
 	border-radius: 6px;
@@ -145,67 +157,13 @@ section
 	transition: transform .1s;
 }
 
-/*-----Zoom de l'image-----*/
-
-.roger:hover
-{
-	-ms-transform: scale(1.5);
-	-webkit-transform: scale(1.5);
-	transform: scale(1.5);
-}
-
-.luffyEnfant
+.luffyEnfant, .departLuffy
 {
 	float: right;
 	border-radius: 6px;
 	box-shadow: 6px 6px 6px black;
 	margin-left: 15px;
 	transition: transform .1s;
-}
-
-/*-----Zoom de l'image-----*/
-
-.luffyEnfant:hover
-{
-	-ms-transform: scale(1.5);
-	-webkit-transform: scale(1.5);
-	transform: scale(1.5);
-}
-
-.luffyShanks2
-{
-	float: left;
-	border-radius: 6px;
-	box-shadow: 6px 6px 6px black;
-	margin-right: 15px;
-	transition: transform .1s;
-}
-
-/*-----Zoom de l'image-----*/
-
-.luffyShanks2:hover
-{
-	-ms-transform: scale(1.5);
-	-webkit-transform: scale(1.5);
-	transform: scale(1.5);
-}
-
-.departLuffy
-{
-	float: right;
-	border-radius: 6px;
-	box-shadow: 6px 6px 6px black;
-	margin-left: 15px;
-	transition: transform .1s;
-}
-
-/*-----Zoom de l'image-----*/
-
-.departLuffy:hover
-{
-	-ms-transform: scale(1.5);
-	-webkit-transform: scale(1.5);
-	transform: scale(1.5);
 }
 
 .eiichiroOda
@@ -219,7 +177,7 @@ section
 
 /*-----Zoom de l'image-----*/
 
-.eiichiroOda:hover
+.roger:hover, .luffyEnfant:hover, .luffyShanks2:hover, .departLuffy:hover, .eiichiroOda:hover
 {
 	-ms-transform: scale(1.5);
 	-webkit-transform: scale(1.5);
@@ -339,7 +297,7 @@ section ul
 	text-align: center;
 }
 
-section a
+section ul a
 {
 	font-weight: bold;
 	font-size: 1.6em;
@@ -377,7 +335,8 @@ table
 	border: 2px black solid;
 	border-radius: 8px;
 	box-shadow: 6px 6px 6px black;
-	margin: 0 20px;
+	margin: 5 25px;
+	width: 100%;
 }
 
 table th 
@@ -386,7 +345,7 @@ table th
 	vertical-align: text-top;
 	font-weight: bold;
 	font-size: 1.2em;
-	padding: 5px 5px 0 0;
+	padding-top: 5px;
 }
 
 table td
@@ -462,6 +421,70 @@ table td
 {
 	background-image: url(images/fdd.jpg);
 	background-size: cover;
+}
+
+/*-----Corps-----*/
+
+.origineImg
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 67%;
+}
+
+figcaption
+{
+	font-size: smaller;
+	font-style: italic;
+	margin-top: -15px;
+	text-align: center;
+}
+
+.smokerLuffy, .luffyHaki, .fddGuepe, .fddLeopard, .fddBoudha, .fddEveil, .fddAllosaure, .fddBasset
+{
+	border-radius: 10px;
+	box-shadow: 6px 6px 6px black;
+}
+
+/*-----Zoom de l'image-----*/
+
+.smokerLuffy:hover, .luffyHaki:hover, .fddGuepe:hover, .fddLeopard:hover, .fddBoudha:hover, .fddEveil:hover, .fddAllosaure:hover, .fddBasset:hover
+{
+	-ms-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+
+/*-----Infos Bulles-----*/
+
+.tooltip 
+{
+    position: relative;
+    display: inline-block;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.tooltip .tooltiptext 
+{
+    visibility: hidden;
+    width: 160px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    top: -5px;
+    left: 104%;
+}
+
+.tooltip:hover .tooltiptext 
+{
+    visibility: visible;
 }
 
 /*----------Page 5 : One Piece au Japon----------*/
