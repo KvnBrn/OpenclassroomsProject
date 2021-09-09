@@ -7,6 +7,7 @@
     </head>
 
     <body class="bgPage6">
+
         <div id="blocPage">
             <header>
                 <img src="images/opLogo.png" alt="Logo One Piece">
@@ -25,9 +26,26 @@
             </header>
         
         <section>
-            <h1 class="titrePage">Quel Personnage êtes-vous?</h1>
+            <div class="welcomeScreen">
+                <h2>Testez vos connaissances!</h2>
+                <button class="welcomeBtn">Lancer le test!</button>
+            </div>
 
-            <p class="pQuiz">Faites le test juste --> ici! <--</p>
+            <div class="questionScreen">
+                <h2>De quelle mer est originaire Sanji ?</h2>
+                <ul>
+                    <li>East Blue</li>
+                    <li>North Blue</li>
+                    <li>West Blue</li>
+                    <li>South Blue</li>
+                </ul>
+            </div>
+
+            <div class="endScreen">
+                <h1>Voici votre résultat :</h1>
+                <p class="resultat">Tu es <span>Luffy</span></p>
+                <button class="endBtn">Rejouer</button>
+            </div>
 
         </section>
             <footer>  
@@ -47,5 +65,7 @@
                 </div>
             </footer> 
         </div>
+
+        <script src="main.js"></script>
     </body>
 </html>

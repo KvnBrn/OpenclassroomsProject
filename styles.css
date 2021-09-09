@@ -278,6 +278,7 @@ h2
 	font-size: 4.8em;
 	font-weight: bold;
 	text-shadow: 6px 6px 6px black;
+	text-align: center;
 }
 
 h3
@@ -329,7 +330,7 @@ footer a
 
 /*-----Corps-----*/
 
-table
+.equipage
 {
 	background-color: rgba(60, 60, 60, 0.6);
 	border: 2px black solid;
@@ -339,7 +340,7 @@ table
 	width: 100%;
 }
 
-table th 
+.equipage th
 {
 	text-align: center;
 	vertical-align: text-top;
@@ -348,7 +349,7 @@ table th
 	padding-top: 5px;
 }
 
-table td
+.equipage td
 {
 	text-align: justify;
 	vertical-align: text-top;
@@ -372,10 +373,8 @@ table td
 .presentation
 {
 	display: flex;
-	flex-flow: row nowrap;
 	align-items: center;
-	justify-content: center;
-	align-content: center;
+	align-content: space-between;
 	text-align: justify;
 }
 
@@ -384,9 +383,14 @@ table td
 	width: 75%;
 }
 
-.merry .sunny
+.merry, .sunny
 {
-	margin: 5px;
+	margin-left: auto;
+}
+
+.navireDescription
+{
+	width: 50%;
 }
 
 /*----------Page 3 : Les Factions dans One Piece----------*/
@@ -398,20 +402,72 @@ table td
 	background-size: cover;
 }
 
-/*-----Bannière-----*/
+/*-----Ancres-----*/
 
-#banniereFaction
+.autres
 {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	height: 210px;
+	border-right: 3px black solid;
 }
 
-.pirates, .gouvernement, .revolutionnaire
+/*-----Corps-----*/
+
+#pirates
+{
+	width: 74%;
+	text-align: justify;
+}
+
+#gouvernement
+{
+	width: 72%;
+	text-align: justify;
+}
+
+.origineImg
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: safe center;
+	align-items: center;
+}
+
+figcaption
+{
+	font-size: smaller;
+	font-style: italic;
+	margin-top: -15px;
+	text-align: center;
+}
+
+.adrAlvida, .adrKuro, .adrKrieg, .adrCavendish, .adrCaribou, .adrCoribou, .adrBartolomeo, .adrKid,
+.adrLuffy, .adrHawkins, .adrXDrake, .adrLaw, .adrApoo, .adrKiller, .adrBonney, .adrBege, .adrZoro, .adrUrouge, .adrRoger, .adrCrocodile, .adrDoflamingo, .adrHancock, .adrKuma, .adrMoria, .adrMihawk, .adrJinbe, .adrTeach, .adrShanks, .adrBigMom, .adrKaido, .courantTarai, .porteDeLaJustice, .conseilDoyen, .imu, .marineFord, .newMarineFord, .gradeMarine
 {
 	border-radius: 10px;
 	box-shadow: 6px 6px 6px black;
+}
+
+.nobles
+{
+	float: right;
+	border-radius: 6px;
+	box-shadow: 6px 6px 6px black;
+	margin-left: 15px;
+}
+
+.marieJoie
+{
+	float: left;
+	border-radius: 6px;
+	box-shadow: 6px 6px 6px black;
+	margin-right: 15px;
+}
+
+h4
+{
+	text-align: center;
+	margin-bottom: 5px;
+	font-size: 1.4em;
+	font-weight: bold;
 }
 
 /*----------Page 4 : Les Fruits du Démon----------*/
@@ -425,24 +481,16 @@ table td
 
 /*-----Corps-----*/
 
-.origineImg
+.origineImg2
 {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: safe center;
 	align-items: center;
 	width: 67%;
 }
 
-figcaption
-{
-	font-size: smaller;
-	font-style: italic;
-	margin-top: -15px;
-	text-align: center;
-}
-
-.smokerLuffy, .luffyHaki, .fddGuepe, .fddLeopard, .fddBoudha, .fddEveil, .fddAllosaure, .fddBasset
+.smokerLuffy, .luffyHaki, .fruitDuDémon, .fddFil, .fddMochi
 {
 	border-radius: 10px;
 	box-shadow: 6px 6px 6px black;
@@ -450,7 +498,7 @@ figcaption
 
 /*-----Zoom de l'image-----*/
 
-.smokerLuffy:hover, .luffyHaki:hover, .fddGuepe:hover, .fddLeopard:hover, .fddBoudha:hover, .fddEveil:hover, .fddAllosaure:hover, .fddBasset:hover
+.fruitDuDémon:hover
 {
 	-ms-transform: scale(1.5);
 	-webkit-transform: scale(1.5);
@@ -507,9 +555,20 @@ figcaption
 
 /*-----Corps-----*/
 
-.pQuiz
+.welcomeScreen, .questionScreen, .endScreen
 {
-	font-size: 3em;
-	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-align: center;
+	flex-direction: column;
+}
+
+.welcomeScreen
+{
+	flex-direction: column;
+}
+.questionScreen, .endScreen
+{
+	display: none;
 }
